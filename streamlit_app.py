@@ -51,7 +51,7 @@ with st.sidebar:
  st.sidebar.text_input("entrer une valeur") 
 
 #pour le curseur
-iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
+iris = st.sidebar.slider("SalePrice:", 208500, 181500, 223500) 
 st.write(f"Vous avez selectionne: {iris} ")
 
 #pour selectionner les cases
