@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import altair as alt 
 #import matplotlib.pyplot as plt
 #import seaborn as sn
 
@@ -17,53 +18,28 @@ st.header("Analyse Exploratoire")
 st.subheader("Apercu des donnees")
 st.write(A.head()) 
 
-#VISUALISATION 
-#st.subheader("Analyse de correlation")
-
-import streamlit as st 
-import pandas as pd
-import numpy as np
-import altair as alt 
-
-
-
- 
-# Charger les données
-df = pd.read_csv('Iris.csv', delimiter=';')
-
-
-# Créer un titre
-st.title("Mon premier tableau de bord Streamlit\n")
-
- 
-# Afficher les données dans un tableau
-# st.table(df)
-
 #creer un char Altair
-chart = alt.Chart(df).mark_bar().encode( x='PetalLength' , y='PetalWidth')
-
-#creer un char Altair
-chart = alt.Chart(df).mark_bar().encode( x='SepalLength' , y='SepalWidth')
+chart = alt.Chart(A).mark_bar().encode( x='YrSold' , y='SalePrice')
 
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True)
 
-chart = alt.Chart(df).mark_point().encode(x='SepalLength' , y='PetalLength')
+#creer un char Altair
+chart = alt.Chart(A).mark_bar().encode( x='Reg' , y='IR1')
+
+chart = alt.Chart(A).mark_point().encode(x='Abnorml' , y='Normal')
+
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True) 
 
 #les 05 premieres lignes de notre tableau
-st.write(df.head())
+st.write(A.head())
 
 with st.sidebar:
- st.title('Iris visualisation') 
+ st.title('fonctionalites Prix de Vente d'une Maison') 
  st.sidebar.subheader("differentes fonctionnalites de notre DASHBOARD :")
 
-#definir un bouton avec Action
-#def afficher_messsage():
- #st.write("Bienvenur sur notre Tableau de Bord!")
-  #if st.sidebar.button("Commencer")
-   #afficher_message()
+
  
  #texte d'entree
 st.sidebar.text_input("entrer une valeur") 
