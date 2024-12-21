@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 A = pd.read_csv("train.csv") 
-B = pd.read_csv("test.csv") 
+#B = pd.read_csv("test.csv") 
 
 # PAGE D'ACCUEIL
 st.title("Analyse et Prediction des Prix de Vente d'une Maison")
