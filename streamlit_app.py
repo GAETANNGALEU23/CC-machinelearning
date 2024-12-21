@@ -19,7 +19,7 @@ st.write(A.head())
 #VISUALISATION 
 st.subheader("Analyse de correlation")
 #corr = train.corr() 
-fig, ax = plt.subplots(figsize=(10, 8))
+#fig, ax = plt.subplots(figsize=(10, 8))
 sn.heatmap(corr, annot=False, cmap="coolwarm", ax=ax)
 st.pyplot(fig)
 
