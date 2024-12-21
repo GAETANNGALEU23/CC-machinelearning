@@ -42,7 +42,7 @@ st.altair_chart(chart, use_container_width=True)
 
 
 with st.sidebar:
-#st.title('fonctionalites Prix de Vente d'une Maison') 
+st.title('fonctionalites Prix de Vente d'une Maison') 
 st.sidebar.subheader("differentes fonctionnalites de notre DASHBOARD :")
 
 
