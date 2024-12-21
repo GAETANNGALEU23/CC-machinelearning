@@ -18,8 +18,8 @@ st.write(A.head())
 
 #VISUALISATION 
 st.subheader("Distribution des prix de vente")
-fig, ax = plt.subplots()
-sn.hisplot(A['SalePrice'], kde=True, ax=ax)
+fig, ax = st.subplots()
+st.hisplot(A['SalePrice'], kde=True, ax=ax)
 st.pyplot(fig)
 
 
