@@ -9,11 +9,6 @@ import numpy as np
 #from sklearn.preprocessing import LabelEncoder
 #from sklearn.preprocessing import StandardScaler
 
-#chargement des donnees
-def load_data():
-    train = pd.read_csv("train.csv")
-    test = pd.read.csv("test.csv")
-    return train, test
-
-train, test = load_data() 
+# PAGE D'ACCUEIL
+st.title("Analyse et Prediction des Prix de Vente d'une Maison")
 
