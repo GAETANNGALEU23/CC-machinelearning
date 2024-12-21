@@ -61,7 +61,7 @@ with st.sidebar.container():
 
 #selecteur de liste
 #st.sidebar.selectbox("SalePrice:", 18, 100, 25) 
-st.sidebar.multiselect("Choix:", ["LotShape","MSZoning","LotShape","LandContour","SalePrice","SaleType"])
+st.sidebar.multiselect("Choix:", ["LotShape","MSZoning","LotShape","LandContour","SalePrice"])
 
 
 
