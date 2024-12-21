@@ -28,9 +28,9 @@ chart = alt.Chart(A).mark_bar().encode( x='YrSold' , y='SalePrice')
 st.altair_chart(chart, use_container_width=True)
 
 #creer un char Altair
-chart = alt.Chart(A).mark_bar().encode( x='Reg' , y='IR1')
+chart = alt.Chart(A).mark_bar().encode( x='Fence' , y='SalePrice')
 
-chart = alt.Chart(A).mark_point().encode(x='Abnorml' , y='Normal')
+chart = alt.Chart(A).mark_point().encode(x='PoolQC' , y='SalePrice')
 
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True) 
