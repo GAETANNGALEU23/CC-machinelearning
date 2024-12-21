@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-A = pd.read_csv(train.csv) 
+A = pd.read_csv("train.csv") 
 
 # PAGE D'ACCUEIL
 st.title("Analyse et Prediction des Prix de Vente d'une Maison")
