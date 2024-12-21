@@ -4,6 +4,8 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #import seaborn as sn
 
+name = st.text_input("Entrez votre nom")
+
 A = pd.read_csv("train.csv") 
 #B = pd.read_csv("test.csv") 
 
