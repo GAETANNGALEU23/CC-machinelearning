@@ -28,9 +28,14 @@ chart = alt.Chart(A).mark_bar().encode( x='YrSold' , y='SalePrice')
 st.altair_chart(chart, use_container_width=True)
 
 #creer un char Altair
+st.markdown("""FENCE""")
 chart = alt.Chart(A).mark_bar().encode( x='Fence' , y='SalePrice')
 
+st.markdown("""POOLQC""")
 chart = alt.Chart(A).mark_point().encode(x='PoolQC' , y='SalePrice')
+
+st.markdown("""LotFrange""")
+chart = alt.Chart(A).mark_point().encode(x='LotFrontage' , y='SalePrice')
 
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True) 
