@@ -60,7 +60,7 @@ with st.sidebar.container():
  st.radio("Choix :", ["LotShape","YrSold","LotShape","LandContour","SalePrice"])
 
 #selecteur de liste
-st.sidebar.selectbox("SalePrice:", 18, 100, 25) 
+#st.sidebar.selectbox("SalePrice:", 18, 100, 25) 
 st.sidebar.multiselect("Choix:", ["LotShape","MSZoning","LotShape","LandContour","SalePrice"])
 
 
