@@ -42,7 +42,7 @@ st.altair_chart(chart, use_container_width=True)
 
 
 with st.sidebar:
- st.title('fonctionalites Prix de Vente d'une Maison') 
+ #st.title('fonctionalites Prix de Vente d'une Maison') 
    #st.sidebar.subheader("differentes fonctionnalites de notre DASHBOARD :")
 
 
@@ -51,8 +51,8 @@ with st.sidebar:
  st.sidebar.text_input("entrer une valeur") 
 
 #pour le curseur
-#iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
-#st.write(f"Vous avez selectionne: {iris} ")
+iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
+st.write(f"Vous avez selectionne: {iris} ")
 
 #pour selectionner les cases
  #with st.sidebar.container():
