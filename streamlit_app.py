@@ -18,6 +18,9 @@ st.header("Analyse Exploratoire")
 st.subheader("Apercu des donnees")
 st.write(A.head()) 
 
+#les 05 premieres lignes de notre tableau
+st.write(A.head())
+
 #creer un char Altair
 chart = alt.Chart(A).mark_bar().encode( x='YrSold' , y='SalePrice')
 
@@ -32,8 +35,6 @@ chart = alt.Chart(A).mark_point().encode(x='Abnorml' , y='Normal')
 #Afficher le chart sur Streamlit
 st.altair_chart(chart, use_container_width=True) 
 
-#les 05 premieres lignes de notre tableau
-st.write(A.head())
 
 with st.sidebar:
  st.title('fonctionalites Prix de Vente d'une Maison') 
@@ -45,17 +46,17 @@ with st.sidebar:
 st.sidebar.text_input("entrer une valeur") 
 
 #pour le curseur
-iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
-st.write(f"Vous avez selectionne: {iris} ")
+#iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
+#st.write(f"Vous avez selectionne: {iris} ")
 
 #pour selectionner les cases
 with st.sidebar.container():
- st.write("Section 1")
- st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
+ #st.write("Section 1")
+ #st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
 #selecteur de liste
 #st.sidebar.selectbox("Setosa:", 18, 100, 25) 
-st.sidebar.multiselect("Choix:", ["SepalLenght","SepalWidth","PetalLengh","PetalWidth","Species"])
+#st.sidebar.multiselect("Choix:", ["SepalLenght","SepalWidth","PetalLengh","PetalWidth","Species"])
 
 
 
