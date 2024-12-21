@@ -57,7 +57,7 @@ st.write(f"Vous avez selectionne: {iris} ")
 #pour selectionner les cases
 with st.sidebar.container():
  st.write("Section 1")
- st.radio("Choix :", ["LotShape","","LotShape","LandContour","SalePrice"])
+ st.radio("Choix :", ["LotShape","YrSold","LotShape","LandContour","SalePrice","SaleCondition","MiscFeature","LotArea"])
 
 #selecteur de liste
 #st.sidebar.selectbox("Setosa:", 18, 100, 25) 
