@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sn
+#import matplotlib.pyplot as plt
+#import seaborn as sn
 
 A = pd.read_csv("train.csv") 
 #B = pd.read_csv("test.csv") 
