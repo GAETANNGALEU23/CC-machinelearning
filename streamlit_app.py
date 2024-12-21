@@ -19,7 +19,7 @@ st.write(A.head())
 #VISUALISATION 
 st.subheader("Distribution des prix de vente")
 fig, ax = plt.subplots()
-sn.hisplot(train['SalePrice'], kde=True, ax=ax)
+sn.hisplot(A['SalePrice'], kde=True, ax=ax)
 st.pyplot(fig)
 
 
