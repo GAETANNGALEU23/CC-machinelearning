@@ -43,14 +43,14 @@ with st.sidebar:
 
  
  #texte d'entree
-st.sidebar.text_input("entrer une valeur") 
+ st.sidebar.text_input("entrer une valeur") 
 
 #pour le curseur
 #iris = st.sidebar.slider("Setosa:", 18, 100, 25) 
 #st.write(f"Vous avez selectionne: {iris} ")
 
 #pour selectionner les cases
-with st.sidebar.container():
+ #with st.sidebar.container():
  #st.write("Section 1")
  #st.radio("Choix :", ["SepalLength","SepalWidth","PetalLength","PetalWith","Species"])
 
