@@ -17,10 +17,15 @@ st.subheader("Apercu des donnees")
 st.write(A.head()) 
 
 #VISUALISATION 
-st.subheader("Distribution des prix de vente")
-fig, ax = st.subplots()
-st.hisplot(A['SalePrice'], kde=True, ax=ax)
+st.subheader("Analyse de correlation")
+corr = train.corr()
+fig, ax = plt.subplots(figsize=(10, 8))
+sn.heatmap(corr, annot=False, cmap="coolwarm", ax=ax)
 st.pyplot(fig)
+
+#fig, ax = st.subplots()
+#st.hisplot(A['SalePrice'], kde=True, ax=ax)
+#st.pyplot(fig)
 
 
 
